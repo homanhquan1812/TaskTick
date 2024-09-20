@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import jwtDecode from "jwt-decode"
+import { jwtDecode } from "jwt-decode"
 
 const Headers = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
