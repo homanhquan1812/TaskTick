@@ -32,7 +32,7 @@ class LoginController
                 phonenumber: usernameMatch.phonenumber,
                 name: usernameMatch.name,
                 email: usernameMatch.email
-            }, process.env.SECRET_KEY, { expiresIn: '24h' })
+            }, process.env.SECRET_KEY, { expiresIn: '168h' })
 
             req.session.username = usernameMatch.username
 
