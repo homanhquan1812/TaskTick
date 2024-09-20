@@ -1,0 +1,381 @@
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  a {
+    color: #0077cc;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  .border-top {
+    border-top: 1px solid #e5e5e5;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+  
+  button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+  }
+
+  .printing-history-box
+{
+    width: 85%;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 20px;
+}
+.cart .cart_menu {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border-radius: 3px;
+  height: 55px;
+  font-size: 14px;
+  background: rgb(255, 235, 192);
+  margin-bottom: 12px;
+  color: #888;
+  margin-top: 120px;
+  padding: 0 20px;
+}
+.cart .cart_menu .sp {
+  color: rgba(0, 0, 0, 0.8);
+  width: 46.27949%;
+}
+.cart .cart_menu .dg {
+  text-align: center;
+  width: 15.88022%;
+}
+.cart .cart_menu .sl {
+  width: 15.4265%;
+  text-align: center;
+}
+.cart .cart_menu .st {
+  width: 10.43557%;
+  text-align: center;
+}
+.cart .cart_menu .tt {
+  width: 12.70417%;
+  text-align: center;
+}
+.cart .cart_content {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.125rem;
+  overflow: hidden;
+  background: rgb(255, 235, 192);
+  overflow: visible;
+}
+.cart .cart_content .cart_item {
+  position: relative;
+  padding-bottom: 1px;
+}
+.cart .cart_content .cart_item .product_name {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  padding: 0 20px 15px;
+  margin-top: 15px;
+}
+.cart .cart_content .cart_item .product_name:first-child {
+  padding-top: 15px;
+}
+.cart .cart_content .cart_item .product_name:last-child {
+  padding-bottom: 20px;
+}
+.cart .cart_content .cart_item .product_name .sanPham {
+  display: flex;
+  align-items: center;
+}
+.cart .cart_content .cart_item .product_name .sanPham .ten_hinh {
+  display: flex;
+  width: 46.27949%;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: column;
+}
+.cart .cart_content .cart_item .product_name .sanPham .ten_hinh .ten_hinh_item {
+  display: flex;
+}
+.cart .cart_content .cart_item .product_name .sanPham .ten_hinh .ten_hinh_item .ten_hinh_img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart .cart_content .cart_item .product_name .sanPham .ten_hinh .ten_hinh_item .ten_hinh_text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 5px 20px 0 10px;
+  font-size: 19px;
+  text-decoration: none;
+}
+.cart .cart_content .cart_item .product_name .sanPham .ten_hinh .ten_hinh_item .ten_hinh_text a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  margin-bottom: 5px;
+  max-height: 32px;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_donGia {
+  flex-direction: column;
+  width: 15.88022%;
+  display: flex;
+  align-items: center;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_donGia div {
+  display: block;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_donGia div .donGia_text {
+  margin-right: 10px;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_donGia div .donGia_text:last-child {
+  margin: 0;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_soLuong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15.4265%;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_soLuong .add_minus {
+  display: flex;
+  align-items: center;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_soLuong .add_minus .EOdsa- {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  width: 32px;
+  height: 32px;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_soLuong .add_minus .v3H4Zf {
+  width: 50px;
+  height: 32px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_soTien {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.43557%;
+  color: rgb(78, 42, 132);
+}
+.cart .cart_content .cart_item .product_name .sanPham .content_thaoTac {
+  width: 12.70417%;
+  display: flex;
+  justify-content: center;
+}
+.cart .cart_total {
+  display: grid;
+  grid-template-columns: 1fr 20.3125rem 11.875rem;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgb(255, 235, 192);
+  width: 100%;
+  flex: 1;
+  font-size: 1rem;
+  position: relative;
+  margin-top: 0.75rem;
+}
+.cart .cart_total .s1Gxkq {
+  padding: 12px 0;
+  grid-column-start: 10;
+  padding-right: 50px;
+  -ms-grid-column-span: 3;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+.cart .cart_total .s1Gxkq .UQv8V6 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1content_donGia5px;
+}
+.cart .cart_total .s1Gxkq .UQv8V6 .fyYBP1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart .cart_total .s1Gxkq .UQv8V6 .fyYBP1 .aiyQAr {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.cart .cart_total .s1Gxkq .UQv8V6 .fyYBP1 .aiyQAr .A-CcKC {
+  font-size: 16px;
+  color: #222;
+  line-height: 19px;
+}
+.cart .cart_total .s1Gxkq .UQv8V6 .fyYBP1 .aiyQAr .total {
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 5px;
+  color: rgb(78, 42, 132);
+  padding-right: 15px;
+}/*# sourceMappingURL=main.css.map */
+
+.button-pink {
+  background-color: #ff0e83;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  padding: 13px 32px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+.button-pink:hover {
+  background-color: white;
+  color: black;
+  border-color: #ff0e83;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.6em);
+}
+
+.success_detail {
+  text-align: center;
+  padding-top: 100px;
+  margin: 3rem;
+}
+.success_detail h2 {
+  margin-bottom: 5px;
+  color: green;
+  font-size: 50px;
+}
+.success_detail h3 {
+  margin-bottom: 5px;
+}
+.success_detail i {
+  font-size: 35px;
+  color: green;
+  margin-bottom: 40px;
+}
+
+.success_button {
+  text-align: center;
+  margin-bottom: 300px;
+}
+.success_button button {
+  width: 310px;
+}
+.success_button a {
+  letter-spacing: 3px;
+  line-height: 30px;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
