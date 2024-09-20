@@ -60,7 +60,7 @@ const EditTask = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Chỉnh sửa khóa học - R2Sshop"
+        "Chỉnh sửa task - TaskTick"
       ]} />
       <Headers />
       <div className="container">

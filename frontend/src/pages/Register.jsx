@@ -73,7 +73,7 @@ const Register = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Đăng ký tài khoản - R2Sshop"
+        "Đăng ký tài khoản - TaskTick"
       ]}></Heads>
       <Headers></Headers>
       <div class="container">

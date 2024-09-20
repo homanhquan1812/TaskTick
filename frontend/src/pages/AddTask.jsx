@@ -48,7 +48,7 @@ const AddTask = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Thêm task mới - R2Sshop"
+        "Thêm task mới - TaskTick"
       ]}/>
       <Headers />
       <div className="container">

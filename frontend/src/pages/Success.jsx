@@ -24,7 +24,7 @@ const Success = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Thành công - R2Sshop"
+        "Thành công - TaskTick"
       ]}></Heads>
         <Headers></Headers>
       <div className="success_detail">

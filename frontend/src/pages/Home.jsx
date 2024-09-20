@@ -66,7 +66,7 @@ const Home = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Trang chủ - R2Sshop"
+        "Trang chủ - TaskTick"
       ]}></Heads>
       <Headers></Headers>
       <div className="text-center">

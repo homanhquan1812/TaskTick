@@ -62,7 +62,7 @@ const Login = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Đăng nhập - R2Sshop"
+        "Đăng nhập - TaskTick"
       ]} />
       <Headers />
       <div className="container">

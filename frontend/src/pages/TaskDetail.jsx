@@ -118,7 +118,7 @@ const TaskDetail = () => {
           "/css/style.css"
         ]}
         additionalTitle={[
-          "Chi tiết khóa học - R2Sshop"
+          "Chi tiết task - TaskTick"
         ]}></Heads>
         <Headers></Headers>
         <div class="container">

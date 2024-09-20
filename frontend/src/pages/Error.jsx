@@ -9,7 +9,7 @@ const Error = () => {
           "/css/error.css"
         ]}
         additionalTitle={[
-          "Lỗi - R2Sshop"
+          "Lỗi - TaskTick"
         ]}></Heads>
         <div id="notfound">
             <div class="notfound">

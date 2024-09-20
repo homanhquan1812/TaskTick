@@ -92,7 +92,7 @@ const Info = () => {
         "/css/style.css"
       ]}
       additionalTitle={[
-        "Thông tin cá nhân - R2Sshop"
+        "Thông tin cá nhân - TaskTick"
       ]}/>
       <Headers />
       <div className="container">
