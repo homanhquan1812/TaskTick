@@ -146,7 +146,7 @@ const Task = () => {
                     </div>
                   </div>
                 ) : (
-                  currentTasks.slice().reverse().map((task) => (
+                  currentTasks.map((task) => (
                     <div className="col-sm-6 col-lg-4" key={task._id}>
                       <div className="card" style={{marginTop: '16px', width: '100%', height: '410px'}}>
                         <img className="card-img-top" src={task.photo} style={{height: '200px', objectFit: 'cover'}} alt={task.title} />
