@@ -16,7 +16,7 @@ const EditTask = () => {
   useEffect(() => {
     const fetchTaskData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/task/detail/${id}`)
+        const response = await fetch(`https://tasktick-0j1f.onrender.com/task/detail/${id}`)
 
         if (!response.ok) {
           throw new Error('Failed to fetch data!')
@@ -39,7 +39,7 @@ const EditTask = () => {
   const submit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.put(`http://localhost:5000/task/edit/${id}`, {
+      const response = await axios.put(`https://tasktick-0j1f.onrender.com/task/edit/${id}`, {
         title, description, photo
       })
       if (response.status === 200) {

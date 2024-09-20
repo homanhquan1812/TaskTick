@@ -17,7 +17,7 @@ const AddTask = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/task', {
+      const response = await axios.post('https://tasktick-0j1f.onrender.com/task', {
         title, description, photo, userId
       })
 

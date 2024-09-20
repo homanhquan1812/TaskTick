@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault()
   
     try {
-      const response = await axios.post('http://localhost:5000/register', {
+      const response = await axios.post('https://tasktick-0j1f.onrender.com/register', {
         username, password, name, phonenumber, email
       })
   
