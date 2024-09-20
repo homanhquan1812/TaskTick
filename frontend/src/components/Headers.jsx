@@ -68,7 +68,7 @@ const Headers = () => {
                         isLoggedIn ? (
                             <>
                                 <li className="nav-item">
-                                    <a className="nav-link text-dark" href="/dailytask">Task hằng ngày</a>
+                                    <a className="nav-link text-dark" href={'/dailytask'}>Task hằng ngày</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link text-dark" href={`/info/${userId}`}>Thông tin cá nhân</a>
@@ -87,10 +87,10 @@ const Headers = () => {
                         ) : (
                             <>
                                 <li className="nav-item">
-                                    <a className="nav-link text-dark" href="/login">Đăng nhập</a>
+                                    <a className="nav-link text-dark" href={'/login'}>Đăng nhập</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-dark" href="/register">Đăng ký</a>
+                                    <a className="nav-link text-dark" href={'/register'}>Đăng ký</a>
                                 </li>
                             </>
                         )
