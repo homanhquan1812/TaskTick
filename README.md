@@ -18,7 +18,7 @@ This website is designed to let you finish daily tasks like Duolingo app.
 2. Backend: <b>NodeJS and ExpressJS</b>
 3. SQL Database: <b>MongoDB</b>.
 4. Cloud Database: <b>MongoDB Atlas</b>.
-5. Hosting: <b>Render</b.
+5. Hosting: <b>Render</b>.
 
 # Known issues
 None.
