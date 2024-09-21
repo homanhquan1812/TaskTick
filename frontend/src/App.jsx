@@ -11,6 +11,7 @@ import Info from './pages/Info'
 import Success from './pages/Success'
 import TaskDetail from './pages/TaskDetail'
 import TaskDeleted from './pages/TaskDeleted'
+import AllTasks from './pages/AllTasks'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -64,6 +65,7 @@ function App() {
         <Route exact path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/dailytask" element={<Task></Task>}></Route>
+        <Route path="/dailytask/alltasks" element={<AllTasks></AllTasks>}></Route>
         <Route path="/dailytask/deleted" element={<TaskDeleted></TaskDeleted>}></Route>
         <Route path="/dailytask/add" element={<AddTask></AddTask>}></Route>
         <Route path="/dailytask/edit/:id" element={<EditTask></EditTask>}></Route>

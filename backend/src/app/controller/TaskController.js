@@ -106,6 +106,17 @@ class TaskController {
         }
     }
 
+    // [PUT] /task/activate
+    async changeFinishedToUnfinished(req, res, next) {
+        try {            
+            await Tasks.updateMany({ finished: true }, { finished: false })
+
+            res.status(200).json('Task changed from finished to unfinished successfully.')
+        } catch (error) {
+            next(error)
+        }
+    }
+
     // [PUT] /task/:id
     async updateAFinishedTask(req, res, next) {
         try {

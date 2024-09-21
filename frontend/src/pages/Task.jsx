@@ -31,6 +31,10 @@ const Task = () => {
   const handleAddProduct = () => {
     navigateTo('/dailytask/add')
   }
+  
+  const alltasks = () => {
+    navigateTo('/dailytask/alltasks')
+  }
 
   const taskDeleted = () => {
     navigateTo('/dailytask/deleted')
@@ -126,6 +130,7 @@ const Task = () => {
             <h2>Task hằng ngày</h2>
             <br />
             <button type="button" className="btn btn-primary" onClick={handleAddProduct}>Thêm task mới</button>
+            <button type="button" style={{marginLeft: '10px'}} className="btn btn-success" onClick={alltasks}>Tất cả các task</button>
             <button type="button" style={{marginLeft: '10px'}} className="btn btn-warning" onClick={taskDeleted}>Task đã xóa</button>
             <div className='mt-4'>
               <div className='row'>
