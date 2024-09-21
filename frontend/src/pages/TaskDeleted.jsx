@@ -33,7 +33,7 @@ const TaskDeleted = () => {
 
   const taskRestoration = async (id) => {
     try {
-      const response = await axios.put(`https://tasktick-0j1f.onrender.com/task/deleted/${id}`, {
+      const response = await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/deleted/${id}`, {
         deleted: false
       })
   
@@ -48,7 +48,7 @@ const TaskDeleted = () => {
 
   const deleteTask = async (id) => {
     try {
-      const response = await axios.delete(`https://tasktick-0j1f.onrender.com/task/delete/per/${id}`)
+      const response = await axios.delete(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/delete/per/${id}`)
       
       if (response.status == 200) {
         console.log('Task deleted successfully.')
@@ -60,7 +60,7 @@ const TaskDeleted = () => {
 
   const fetchProductsAPI = async () => {
     try {
-      const response = await fetch(`https://tasktick-0j1f.onrender.com/task/deleted/${userId}`, {
+      const response = await fetch(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/deleted/${userId}`, {
         withCredentials: true
       })
       const data = await response.json()

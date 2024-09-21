@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault()
   
     try {
-      const response = await axios.post('https://tasktick-0j1f.onrender.com/register', {
+      const response = await axios.post(`${import.meta.env.VITE_APP_WEB_SERVICE}/register`, {
         username, password, name, phonenumber, email
       })
   

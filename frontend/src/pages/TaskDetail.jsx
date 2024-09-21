@@ -26,7 +26,7 @@ const TaskDetail = () => {
 
     const deleteTask = async (id) => {  
       try {
-        const response = await axios.delete(`https://tasktick-0j1f.onrender.com/task/delete/tem/${id}`)
+        const response = await axios.delete(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/delete/tem/${id}`)
         
         if (response.status == 200) {
           navigateTo('/dailytask')
@@ -54,7 +54,7 @@ const TaskDetail = () => {
 
     const taskFinished = async (id) => {
       try {
-        const response = await axios.put(`https://tasktick-0j1f.onrender.com/task/${id}`, {
+        const response = await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/${id}`, {
           finished: true
         })
     
@@ -74,7 +74,7 @@ const TaskDetail = () => {
 
     const fetchTaskIdAPI = async () => {
       try {
-        const response = await fetch(`https://tasktick-0j1f.onrender.com/task/detail/${id}`)
+        const response = await fetch(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/detail/${id}`)
 
         if (response.status == 200) {
           console.log('Data fetched successfully.')

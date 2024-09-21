@@ -24,8 +24,7 @@ const Info = () => {
     const token = localStorage.getItem('token')
     
     try {
-      // const response = await axios.put(`https://tasktick-0j1f.onrender.com/${import.meta.env.VITE_APP_API_KEY}/info`, {
-      const response = await axios.put(`https://tasktick-0j1f.onrender.com/updateinfo/info`, {
+      const response = await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/updateinfo/info`, {
         name, phonenumber, email, username
       }, { 
         headers: { 
@@ -44,8 +43,7 @@ const Info = () => {
       }
       
       if (newPassword != '') {
-        // await axios.put(`https://tasktick-0j1f.onrender.com/${import.meta.env.VITE_APP_API_KEY}/password`, {
-        await axios.put(`https://tasktick-0j1f.onrender.com/updateinfo/password`, {
+        await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/updateinfo/password`, {
           oldPassword,
           newPassword
         }, { 

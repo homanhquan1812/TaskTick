@@ -38,7 +38,7 @@ const Task = () => {
 
   const usersStreak = async () => {
     try {
-      const response = await fetch(`https://tasktick-0j1f.onrender.com/user/streak/${userId}`)
+      const response = await fetch(`${import.meta.env.VITE_APP_WEB_SERVICE}/user/streak/${userId}`)
 
       if (response.status === 200) {
         const data = await response.json()
@@ -51,7 +51,7 @@ const Task = () => {
 
   const taskFinished = async (id) => {
     try {
-      const response = await axios.put(`https://tasktick-0j1f.onrender.com/task/${id}`, {
+      const response = await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/${id}`, {
         finished: true
       })
   
@@ -66,7 +66,7 @@ const Task = () => {
 
   const fetchProductsAPI = async () => {
     try {
-      const response = await fetch(`https://tasktick-0j1f.onrender.com/task/${userId}`, {
+      const response = await fetch(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/${userId}`, {
         withCredentials: true
       })
       const data = await response.json()

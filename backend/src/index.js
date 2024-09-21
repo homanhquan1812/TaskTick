@@ -15,7 +15,7 @@ db.connect()
 
 // CORS
 app.use(cors({ 
-    origin: 'https://tasktick-hmq.onrender.com',
+    origin: `${process.env.STATIC_SITE}`,
     credentials: true
 }))
 
