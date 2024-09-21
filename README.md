@@ -27,9 +27,10 @@ None.
 > Finished.
 
 # How to use
-1. Sign up a new account.
-2. Add whatever tasks you want.
-3. Finish it within a day.
+1. Open Terminal of **TaskTick**, run `npm run start` to run **backend** and **frontend** simultaneously (**Concurrently** module).
+2. Sign up a new account.
+3. Add whatever tasks you want.
+4. Finish it within a day.
 
 # Screenshots
 ![image](https://github.com/user-attachments/assets/4fdcbe87-ab44-4037-8097-86aba41b4e57)
