@@ -7,7 +7,7 @@ This website is designed to let you finish daily tasks like Duolingo app.
 
 # Website address
 
-> https://tasktick-hmq.onrender.com/
+> https://hmq-tasktick.onrender.com
 
 # Technologies used to build this website
 <div align="center">
