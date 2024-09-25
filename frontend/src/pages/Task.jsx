@@ -40,6 +40,18 @@ const Task = () => {
     navigateTo('/dailytask/deleted')
   }
 
+  const resetTasks = async () => {
+    try {
+      const response = await axios.put(`${import.meta.env.VITE_APP_WEB_SERVICE}/task/re-activate`)
+
+      if (response.status === 200) {
+        console.log('Tasks reset successfully.')
+      }
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   const usersStreak = async () => {
     try {
       const response = await fetch(`${import.meta.env.VITE_APP_WEB_SERVICE}/user/streak/${userId}`)
@@ -132,6 +144,7 @@ const Task = () => {
             <button type="button" className="btn btn-primary" onClick={handleAddProduct}>Thêm task mới</button>
             <button type="button" style={{marginLeft: '10px'}} className="btn btn-success" onClick={alltasks}>Tất cả các task</button>
             <button type="button" style={{marginLeft: '10px'}} className="btn btn-warning" onClick={taskDeleted}>Task đã xóa</button>
+            <button type="button" style={{marginLeft: '10px'}} className="btn btn-primary" onClick={resetTasks}>Khởi động lại task</button>
             <div className='mt-4'>
               <div className='row'>
                 {task.length === 0 ? (
